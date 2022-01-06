@@ -38,7 +38,7 @@
 
 #if SYSTEM_SECTION == SUBSECTION(EXTRUDER, 1)
   #undef  EXTRUDERS
-  #define EXTRUDERS 4  //changed from 3 to 4 to for added head band
+  #define EXTRUDERS 4  //changed from 3 to 4 to for added heat band
   #undef HOTEND_OFFSET_X
   #undef HOTEND_OFFSET_Y 
 #endif
@@ -168,8 +168,8 @@
   #define TEMP_0_PIN      4   // Analog Input
   #define TEMP_1_PIN      5   // Analog Input
   //#define TEMP_2_PIN      9   // Analog Input (D63) Original config, need to restore 
-  #define TEMP_2_PIN      13   // Analog Input (D63)
-  #define TEMP_3_PIN      15   // Analog Input (D63)
+  #define TEMP_2_PIN      13   // Thermistor Input (T0)
+  #define TEMP_3_PIN      15   // THermistor Input (T1)
   #define TEMP_BED_PIN    3   // Analog Input (D57)
 
   #define HEATER_0_PIN    10   // HE1 on board
