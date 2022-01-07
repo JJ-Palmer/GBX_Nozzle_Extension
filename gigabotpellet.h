@@ -21,9 +21,9 @@
 
 #if SYSTEM_SECTION == SUBSECTION(TEMPERATURE, 1)
   #undef  TEMP_SENSOR_2
-  #define TEMP_SENSOR_2    4 //changed to 4 for testing w 10 tmistor, return to -1 for tcouple w amp
+  #define TEMP_SENSOR_2    -4 
   #undef  TEMP_SENSOR_3
-  #define TEMP_SENSOR_3    4 //changed to 4 for testing w 10 tmistor, return to -1 for tcouple w amp
+  #define TEMP_SENSOR_3    5 
 #endif
 
 #if SYSTEM_SECTION == SUBSECTION(TEMPERATURE, 3)
@@ -71,10 +71,10 @@
 
   #define TEMP_SENSOR_0   -1
   #define TEMP_SENSOR_1   -1
-  #define TEMP_SENSOR_2    4 //changed to 4 for testing w 10 tmistor, return to -1 for tcouple w amp
-  #define TEMP_SENSOR_3    4 //changed to 4 for testing w 10 tmistor, return to -1 for tcouple w amp
+  #define TEMP_SENSOR_2    -4 
+  #define TEMP_SENSOR_3    5 
   #define TEMP_SENSOR_4    0
-  #define TEMP_SENSOR_BED -4
+  #define TEMP_SENSOR_BED 4
 
   #undef HEATER_0_MAXTEMP 
   #undef HEATER_1_MAXTEMP 
@@ -171,6 +171,8 @@
   #define TEMP_2_PIN      13   // Thermistor Input (T0)
   #define TEMP_3_PIN      15   // THermistor Input (T1)
   #define TEMP_BED_PIN    3   // Analog Input (D57)
+ 
+
 
   #define HEATER_0_PIN    10   // HE1 on board
   #define HEATER_1_PIN    16   // HE3 on board
